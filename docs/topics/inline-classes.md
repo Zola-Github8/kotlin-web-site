@@ -49,7 +49,6 @@ fun main() {
     println(name.length) // property getter is called as a static method
 }
 ```
-{kotlin-runnable="true" kotlin-min-compiler-version="1.3"}
 
 However, there are some restrictions for inline class members:
 * Inline classes cannot have `init` blocks.
@@ -74,7 +73,6 @@ fun main() {
     println(name.prettyPrint()) // Still called as a static method
 }
 ```
-{kotlin-runnable="true" kotlin-min-compiler-version="1.3"}
 
 It is forbidden for inline classes to participate in a class hierarchy. This means that inline classes cannot extend 
 other classes and must be `final`.
